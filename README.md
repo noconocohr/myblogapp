@@ -1,0 +1,3 @@
+## myblogapps  
+
+djangoのチュートリアルを追っただけ
