@@ -3,6 +3,19 @@
 <head>
     <title>投稿一覧</title>
 <body>
-    <h2>これは投稿一覧のページです！</h2>
+    <h1>Welcome to our blog!</h1>
+    
+    <h2>最新の投稿</h2>
+
+    {% for post in posts.all %}
+        {{ post.title }}
+        <br> 
+        {{ post.published }}
+        <br>
+        <img src={{post.image.url}} alt="">
+        {{ post.summary}}
+        <br><br><br>
+    {% endfor %}
+
 </body>
 </html>
